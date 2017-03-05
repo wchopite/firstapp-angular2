@@ -1,3 +1,13 @@
+<h1>String Interpolation</h1>
 <p>
   {{stringInterpolation}} | {{numberInterpolation}}
 </p>
+<input type="text" value="{{stringInterpolation}}">
+<h1>Property Binging</h1>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{redBorder: onTest()}">Is this styled?</p>
+<p [ngStyle]="{color: 'green'}">Is this styled?</p>
+<h3>Custom Property Binding</h3>
+<fa-property-binding></fa-property-binding>
+<br/>
+<fa-property-binding [result]="10"></fa-property-binding>
